@@ -27,9 +27,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard')->middleware('auth');
 
-Route::get('/manajemen-pelanggan', function () {
-    return view('manajemen-pelanggan');
-})->name('manajemen-pelanggan')->middleware('auth');
+Route::get('/tables', function () {
+    return view('tables');
+})->name('tables')->middleware('auth');
 
 Route::get('/wallet', function () {
     return view('wallet');
